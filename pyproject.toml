@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "concordance"
+version = "0.1.0"
+description = "Byte-level language model pairing a small hybrid neural reader with an exact counted corpus memory."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "torch>=2.5",
+]
+
+[tool.setuptools.packages.find]
+include = ["concordance*"]

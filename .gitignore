@@ -1,0 +1,19 @@
+# data, memory files, checkpoints and local research archive
+archive/
+data/
+checkpoints/
+backups/
+*.pt
+*.npy
+*.bin
+
+# new runs write logs at the repo root; the committed ones live in logs/
+/*.log
+/*.out
+
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
